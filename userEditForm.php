@@ -1,17 +1,15 @@
 <?php
     require("head.php");
-
+    var_dump($_GET);
 ?>
 
 
 <body>
     <div class="form-container">
-        <strong> <?php echo $_GET["id"];?> </strong>
-
-        <form action="functions/userEdit.php" method="post">
+    <!-- formulaire method post pour modifier seulement le pseudo qui exécute la fonction userEdit.php!--> 
+        <form action="" method="post">
             <p>Changer de pseudo</p>
-            <input type="hidden" name="id" value="<?php echo $_GET["id"]; ?>">
-            <input type="text" name="id" value="<?php echo $_GET["id"]; ?>">
+            <input type="text">
             <input type="submit" value="Modifier">
         </form>
 </body>
