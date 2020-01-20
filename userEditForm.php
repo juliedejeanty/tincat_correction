@@ -3,7 +3,8 @@
 
 
     //Récupérer l'ID
-    var_dump($_GET);
+    var_dump($_GET["user_id"]);
+
 ?>
 
 
